@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TasteBites Restaurant</title>
+  <link rel="stylesheet" href="styke.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">TasteBites</div>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#Dishs">Dishs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 style="color: rgb(139,0,0);">Welcome to TasteBites</h1>
+    <p style="color: rgb(139,0,0);">Delicious food. Cozy atmosphere.</p>
+    <a href="#menu" class="btn">View Menu</a>
+  </section>
+
+  <section class="menu" id="menu">
+    <h1 style="color: rgb(139,0,0);">Our Menu</h1>
+    <div class="menu-items">
+      <div class="menu-card">
+        <img src="https://th.bing.com/th/id/OIP.Fmk-x1Ht3KJ_wg7GqY68FgHaE8?w=286&h=191&c=7&r=0&o=7&pid=1.7&rm=3" alt="Grilled Chicken" />
+        <div class="menu-content">
+          <h3>Grilled Chicken</h3>
+          <p>Served with seasonal vegetables</p>
+          <span>$12.99</span>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://th.bing.com/th/id/OIP.Dvriz4uTnIKJiL30t5wAUAHaLG?w=184&h=276&c=7&r=0&o=5&pid=1.7" alt="Veggie Pizza" />
+        <div class="menu-content">
+          <h3>Veggie Pizza</h3>
+          <p>Loaded with fresh garden veggies</p>
+          <span>$9.99</span>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://th.bing.com/th/id/OIP.RA5LVtiPu3VDdhm7SEVV8wHaHa?w=197&h=197&c=7&r=0&o=5&pid=1.7r" alt="Beef Burger" />
+        <div class="menu-content">
+          <h3>Beef Burger</h3>
+          <p>With cheese, lettuce, and tomato</p>
+          <span>$10.49</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="Dishs">
+    <h1 style="color: rgb(139,0,0);">Dishs</h1>
+    <div class="gallery-grid">
+    <img src="https://th.bing.com/th/id/OIP.eR_BBSP8yiFE33EVY_4swwHaD8?w=332&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Dish 1">
+      <img src="https://th.bing.com/th/id/OIP.V6eUchwkBLy1-PrSSYxtygHaE7?w=282&h=188&c=7&r=0&o=7&pid=1.7&rm=3" alt="Dish 2">
+      <img src="https://img.freepik.com/premium-photo/spicy-green-chilli-aloo-paratha-popular-street-food-aloo-paratha-alu-paratha-picture_1020697-125112.jpg" alt="Dish 3">
+      <img src="https://th.bing.com/th/id/OIP.Rq617kDxKXVZtblhM66DJAHaEK?w=325&h=182&c=7&r=0&o=7&pid=1.7&rm=3" alt="Restaurant">
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h1 style="color: rgb(139,0,0);">Contact Us</h1>
+    <p>Email: info@tastebites.com | Phone: 123-456-7890</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TasteBites. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
